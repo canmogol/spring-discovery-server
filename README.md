@@ -1,2 +1,2 @@
 # spring-service-discovery-server
-Spring Service Discovery Server
+Spring Boot Service Discovery Server
