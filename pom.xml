@@ -19,6 +19,9 @@
 	</parent>
 
 	<properties>
+		<!-- spring boot start class -->
+		<start-class>com.fererlab.spring.ServiceDiscoveryApplication</start-class>
+
 		<!-- encodings and java versions-->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -48,6 +51,11 @@
 					<source>${project.source.version}</source>
 					<target>${project.target.version}</target>
 				</configuration>
+			</plugin>
+			<!-- SPRING BOOT PLUGIN-->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<!-- DOCKER PLUGIN -->
 			<plugin>
